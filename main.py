@@ -49,4 +49,4 @@ async def on_message(message):
 
 keep_alive()
 
-client.run(os.getenv('TOKEN'))
+client.run(os.getenv('ODI3MTE3OTc3MjMyNzM2MjY2.YGWXpA.xcDOk6z50qEkmKN9YOvvHNO9IrU'))
