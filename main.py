@@ -4,7 +4,12 @@ from discord import Intents
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 from keep_allive import keep_alive
+import os 
+from dotenv import load_dotenv
 
+load_dotenv()
+
+TOKEN = os.getenv('DISCORD_TOKEN')
 
 intents= Intents.default()
 intents.members = True
@@ -147,4 +152,4 @@ async def hi(ctx):
 
 keep_alive()
 
-bot.run('') #your token here
+bot.run(TOKEN) #your token here
